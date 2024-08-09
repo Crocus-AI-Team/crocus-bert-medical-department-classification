@@ -9,7 +9,8 @@ Bu proje, tıbbi anlamda kişinin durumunu ve şikayetini açıklayan metinler �
 
 Proje için oluşturduğumuz dataset:
 "[caesarCITREA/medikal-departman-57k](https://huggingface.co/datasets/caesarCITREA/medikal-departman-57k)"
-"[Modeli online olarak denenebileceği huggingface ortamı](https://huggingface.co/spaces/caesarCITREA/crocus-medical)"
+
+Model aynı zamanda huggingface space'e online olarak denenebilmesi için eklenmiştir : "[Modeli online olarak denenebileceği huggingface ortamı](https://huggingface.co/spaces/caesarCITREA/crocus-medical)"
 
 
 ## Proje Yapısı
