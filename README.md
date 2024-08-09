@@ -3,7 +3,7 @@
 
 ![Image](./image.png)
 
-Bu proje, metin tabanlı açıklamalara göre tıbbi durumları sınıflandıran bir BERT modelini kullanarak bir FastAPI tabanlı hizmet sağlar. API, bir hastanın belirtilerine göre yönlendirilmesi gereken departmanı döndürür.
+Bu proje, tıbbi anlamda kişinin durumunu ve şikayetini açıklayan metinler üzerinden bu kişinin hangi tıbbi departmandan hizmet alması gerektiği çıktısını veren bir BERT Temelli Classification modelidir. 
 
 ## Proje Yapısı
 
