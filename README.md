@@ -25,8 +25,8 @@ Bu projeyi çalıştırabilmek için aşağıdaki araçların bilgisayarınızda
 
 1. **Depoyu Kopyalayın**:
    ```bash
-   git clone <repository_url>
-   cd <repository_directory>
+   git clone git@github.com:Crocus-AI-Team/crocus-bert-medical-department-classification.git
+   cd crocus-bert-medical-department-classification
    ```
 
 2. **Gerekli Paketleri Yükleyin**:
@@ -34,10 +34,7 @@ Bu projeyi çalıştırabilmek için aşağıdaki araçların bilgisayarınızda
    pip install -r requirements.txt
    ```
 
-3. **Model Dosyalarını Yükleyin**:
-   `crocus-bert-medical-department-classification` adlı model dosyalarını proje dizinine yerleştirin. Bu dosyalar `main.py` ve `app.py` içinde modelin yükleneceği dosyalardır.
-
-4. **API'yi Başlatın**:
+3. **API'yi Başlatın**:
    ```bash
    python app.py
    ```
@@ -58,9 +55,9 @@ Bu script, belirtilen hastalık açıklamasını API'ye gönderir ve API'nin ön
 - **Endpoint**: `/model`
 - **Yöntem**: `POST`
 - **Girdi**: 
-  - `text`: Hastanın şikayetini içeren metin (JSON formatında).
+  - `text`: Hastanın şikayetini içeren metin (TEXT formatında).
 - **Çıktı**:
-  - `department`: Hastanın gitmesi gereken departmanın adı (JSON formatında).
+  - `department`: Hastanın gitmesi gereken departmanın adı (TEXT formatında).
 
 ## Örnek İstek
 
@@ -80,4 +77,4 @@ else:
 
 ## Lisans
 
-Bu proje MIT lisansı altında lisanslanmıştır. Daha fazla bilgi için `LICENSE` dosyasına bakınız.
+Bu proje APACHE2.0 lisansı altında lisanslanmıştır. Daha fazla bilgi için `LICENSE` dosyasına bakınız.
