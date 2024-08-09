@@ -12,6 +12,7 @@ Proje için oluşturduğumuz dataset:
 
 Model aynı zamanda huggingface space'e online olarak denenebilmesi için eklenmiştir : "[Modeli online olarak denenebileceği huggingface ortamı](https://huggingface.co/spaces/caesarCITREA/crocus-medical)"
 
+Süreç İçerisinde destek aracı olarak geliştirilen web tool'umuz da submodule olarak eklenmiştir.
 
 ## Proje Yapısı
 
