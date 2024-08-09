@@ -70,4 +70,5 @@ def get_department(description: Description):
 
 # Fast API Server'ının başlatımı
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8000, reload=True)
+    import uvicorn
+    uvicorn.run("app:app", host="0.0.0.0", port=8000, reload=True)
