@@ -1,0 +1,3 @@
+[submodule "Crocus-AI-Team/data-visualisation-tool"]
+	path = Crocus-AI-Team/data-visualisation-tool
+	url = https://github.com/Crocus-AI-Team/data-visualisation-tool.git
