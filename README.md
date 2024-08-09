@@ -7,6 +7,10 @@ CROCUS Takımı Gururla Sunar!
 
 Bu proje, tıbbi anlamda kişinin durumunu ve şikayetini açıklayan metinler üzerinden bu kişinin hangi tıbbi departmandan hizmet alması gerektiği çıktısını veren bir BERT Temelli Classification modelidir. 
 
+Proje için oluşturduğumuz dataset:
+"[caesarCITREA/medikal-departman-57k](https://huggingface.co/datasets/caesarCITREA/medikal-departman-57k)"
+
+
 ## Proje Yapısı
 
 - `main.py`: Modelin yüklenmesi ve tahmin işlemlerinin gerçekleştirildiği dosya.
