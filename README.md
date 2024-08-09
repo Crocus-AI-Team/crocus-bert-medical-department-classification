@@ -3,6 +3,8 @@
 
 ![Image](./image.png)
 
+CROCUS Takımı Gururla Sunar!
+
 Bu proje, tıbbi anlamda kişinin durumunu ve şikayetini açıklayan metinler üzerinden bu kişinin hangi tıbbi departmandan hizmet alması gerektiği çıktısını veren bir BERT Temelli Classification modelidir. 
 
 ## Proje Yapısı
