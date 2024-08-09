@@ -34,7 +34,7 @@ Bu projeyi çalıştırabilmek için aşağıdaki araçların bilgisayarınızda
 
 1. **Depoyu Kopyalayın**:
    ```bash
-   git clone git@github.com:Crocus-AI-Team/crocus-bert-medical-department-classification.git
+   git clone --recursive git@github.com:Crocus-AI-Team/crocus-bert-medical-department-classification.git
    cd crocus-bert-medical-department-classification
    ```
 
