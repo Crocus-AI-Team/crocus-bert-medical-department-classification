@@ -1,0 +1,5 @@
+fastapi==0.112.0
+pydantic==2.8.2
+Requests==2.32.3
+torch==2.3.0+cu118
+uvicorn==0.30.5

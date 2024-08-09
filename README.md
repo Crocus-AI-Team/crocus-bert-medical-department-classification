@@ -1,0 +1,83 @@
+
+# Tıbbi Departman Sınıflandırma API'si
+
+![Image](./image.png)
+
+Bu proje, metin tabanlı açıklamalara göre tıbbi durumları sınıflandıran bir BERT modelini kullanarak bir FastAPI tabanlı hizmet sağlar. API, bir hastanın belirtilerine göre yönlendirilmesi gereken departmanı döndürür.
+
+## Proje Yapısı
+
+- `main.py`: Modelin yüklenmesi ve tahmin işlemlerinin gerçekleştirildiği dosya.
+- `app.py`: FastAPI sunucusunu ve `/model` endpoint'ini uygulayan dosya.
+- `request.py`: API'ye istek göndererek modelin nasıl kullanılacağını gösteren örnek bir dosya.
+- `requirements.txt`: Projenin çalışması için gerekli olan Python paketlerinin listesi.
+
+## Kurulum ve Çalıştırma
+
+### Gereksinimler
+
+Bu projeyi çalıştırabilmek için aşağıdaki araçların bilgisayarınızda yüklü olması gerekmektedir:
+
+- Python 3.8 veya üzeri
+- pip (Python paket yöneticisi)
+
+### Adım Adım Kurulum
+
+1. **Depoyu Kopyalayın**:
+   ```bash
+   git clone <repository_url>
+   cd <repository_directory>
+   ```
+
+2. **Gerekli Paketleri Yükleyin**:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Model Dosyalarını Yükleyin**:
+   `crocus-bert-medical-department-classification` adlı model dosyalarını proje dizinine yerleştirin. Bu dosyalar `main.py` ve `app.py` içinde modelin yükleneceği dosyalardır.
+
+4. **API'yi Başlatın**:
+   ```bash
+   python app.py
+   ```
+   Bu komut ile FastAPI sunucusu başlatılacak ve API, `http://127.0.0.1:8000` adresinden erişilebilir olacaktır.
+
+## Kullanım
+
+API'yi test etmek için `request.py` dosyasını çalıştırabilirsiniz:
+
+```bash
+python request.py
+```
+
+Bu script, belirtilen hastalık açıklamasını API'ye gönderir ve API'nin önerdiği departmanı ekrana yazdırır.
+
+## API Detayları
+
+- **Endpoint**: `/model`
+- **Yöntem**: `POST`
+- **Girdi**: 
+  - `text`: Hastanın şikayetini içeren metin (JSON formatında).
+- **Çıktı**:
+  - `department`: Hastanın gitmesi gereken departmanın adı (JSON formatında).
+
+## Örnek İstek
+
+```python
+import requests
+
+url = "http://127.0.0.1:8000/model"
+description = "Son zamanlarda yürüyüş yaparken dizlerimden daha fazla tıkırdama sesi geliyor."
+response = requests.post(url, json={"text": description})
+
+if response.status_code == 200:
+    result = response.json()
+    print(f"Hasta şu departmana gitmeli: {result['department']}")
+else:
+    print(f"İstek şu kod ile hata verdi {response.status_code}")
+```
+
+## Lisans
+
+Bu proje MIT lisansı altında lisanslanmıştır. Daha fazla bilgi için `LICENSE` dosyasına bakınız.
