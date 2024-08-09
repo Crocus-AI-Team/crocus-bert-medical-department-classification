@@ -1,5 +1,5 @@
 
-# Tıbbi Departman Sınıflandırma API'si
+# BERT ile Medikal Departman Sınıflandırıcı
 
 ![Image](./image.png)
 
